@@ -3,21 +3,34 @@
   "name": "io.github.capitalthought/customs-dog-mcp",
   "description": "Pet travel documents + border trip-readiness (cleared/caution/blocked) for AI assistants.",
   "status": "active",
-  "repository": { "url": "https://github.com/capitalthought/customs-dog-mcp", "source": "github" },
-  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/capitalthought/customs-dog-mcp",
+    "source": "github"
+  },
+  "version": "1.0.1",
   "websiteUrl": "https://customs.dog",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "@capitalthought/customs-dog-mcp",
-      "version": "1.0.0",
-      "transport": { "type": "stdio" },
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
       "environmentVariables": [
-        { "name": "CUSTOMS_DOG_API_KEY", "description": "Per-household API key (customs.dog → Settings → API keys)", "isSecret": true, "isRequired": false }
+        {
+          "name": "CUSTOMS_DOG_API_KEY",
+          "description": "Per-household API key (customs.dog \u2192 Settings \u2192 API keys)",
+          "isSecret": true,
+          "isRequired": false
+        }
       ]
     }
   ],
   "remotes": [
-    { "type": "streamable-http", "url": "https://customs.dog/mcp" }
+    {
+      "type": "streamable-http",
+      "url": "https://customs.dog/mcp"
+    }
   ]
 }

@@ -1,15 +1,41 @@
 {
   "name": "@capitalthought/customs-dog-mcp",
-  "version": "1.0.0",
-  "description": "MCP launcher for customs.dog — connect your AI assistant to your pets' travel documents and border trip-readiness checks (cleared / caution / blocked).",
+  "version": "1.0.1",
+  "description": "MCP launcher for customs.dog \u2014 connect your AI assistant to your pets' travel documents and border trip-readiness checks (cleared / caution / blocked).",
   "type": "module",
-  "bin": { "customs-dog-mcp": "bin/cli.mjs" },
-  "files": ["bin", "README.md"],
-  "engines": { "node": ">=18" },
-  "keywords": ["mcp", "modelcontextprotocol", "model-context-protocol", "ai-agent", "claude", "anthropic", "pets", "pet-travel", "travel", "customs", "border", "dog"],
+  "bin": {
+    "customs-dog-mcp": "bin/cli.mjs"
+  },
+  "files": [
+    "bin",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "model-context-protocol",
+    "ai-agent",
+    "claude",
+    "anthropic",
+    "pets",
+    "pet-travel",
+    "travel",
+    "customs",
+    "border",
+    "dog"
+  ],
   "homepage": "https://customs.dog",
-  "repository": { "type": "git", "url": "git+https://github.com/capitalthought/customs-dog-mcp.git" },
-  "bugs": { "url": "https://github.com/capitalthought/customs-dog-mcp/issues" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capitalthought/customs-dog-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/capitalthought/customs-dog-mcp/issues"
+  },
   "author": "Capital Thought, LLC",
-  "license": "MIT"
+  "license": "MIT",
+  "mcpName": "io.github.capitalthought/customs-dog-mcp"
 }
