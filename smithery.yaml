@@ -1,0 +1,16 @@
+# Smithery config — customs.dog is a hosted remote MCP server.
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      customsDogApiKey:
+        type: string
+        title: customs.dog API key
+        description: Per-household key from customs.dog → Settings → API keys.
+  commandFunction: |
+    (config) => ({
+      command: "npx",
+      args: ["-y", "@capitalthought/customs-dog-mcp"],
+      env: { CUSTOMS_DOG_API_KEY: config.customsDogApiKey || "" }
+    })
